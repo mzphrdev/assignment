@@ -1,0 +1,339 @@
+/*=========================
+CSS Reset
+=========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Rubik;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+/*===============================
+Body and Header
+================================*/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #d90429 !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+header.hero-section {
+    background: #000;
+    min-height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url(../img/coding.jpg);
+    background-size: cover;
+}
+header.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000db;
+    width: 100%;
+    height: 100%;
+}
+nav, .hero-title{
+    z-index: 9;
+    position: relative;
+}
+nav ul {
+    display: flex;
+    gap: 25px;
+    padding-top: 25px;
+}
+nav ul li a {
+    color: #fff;
+    text-transform: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 19px;
+}
+nav ul li a:hover {
+    transition: .3s all ease-out;
+    color: #b61818;
+}
+h1.hero-title {
+    color: #fff;
+    font-size: 80px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    padding-top: 5%;
+}
+.floating-video iframe {
+    width: 100%;
+}
+.floating-video {
+    position: absolute;
+    bottom: -15%;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/*==============================
+Wrapper Style
+==============================*/
+.wrapper {
+    padding-top: 7em;
+    padding-bottom: 2em;
+}
+section {
+    padding: 4em 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+h1.sectiontitle {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    position: relative;
+}
+.reading {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+    padding: 0 5em;
+}
+.reading .left {
+    width: 55%;
+}
+.reading .right{
+    width: 45%;
+}
+.right img{
+    width: 100%;
+}
+.left {
+    font-family: 'Poppins';
+    line-height: 2;
+    font-size: 19px;
+    color: #4d4d4d;
+}
+.left strong {
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: underline;
+}
+a.readmore {
+    background: #b61818;
+    color: #fff;
+    padding: 4px 25px;
+    display: block;
+    width: fit-content;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+a.readmore:hover {
+    background: #f00;
+    transition: .4s all ease-out;
+}
+h1.sectiontitle:before {
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 12px;
+    background: #ff2626;
+    position: absolute;
+    z-index: -1;
+}
+section.dark {
+    background: #141414;
+    z-index: 0;
+    position: relative;
+    padding: 4em 0;
+}
+.dark h1, .dark p{
+    color: #fff;
+}
+.download {
+    background: #23aaf2;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 21px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+.paths {
+    display: flex;
+    gap: 25px;
+    padding: 0 5em;
+    margin-top: 20px;
+}
+.single-path {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+}
+.single-path h2 {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Rubik';
+}
+.single-path:first-child{
+    background: #D9EEE1;
+}
+.single-path:nth-child(2){
+    background: #FFF4A3;
+}
+.single-path:last-child{
+    background: #FFC0C7;
+}
+.single-path p {
+    color: #222;
+    line-height: 1.5;
+    font-size: 19px;
+}
+.startnow {
+    background: #000;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+.dark img {
+    max-width: 50%;
+}
+.contact p {
+    font-size: 21px;
+}
+.contact p a {
+    color: #f00;
+    font-weight: 600;
+    text-decoration: underline;
+}
+a.contactbtn {
+    background: #ff2626;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-size: 19px;
+    font-weight: 500;
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 16px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+footer a{
+    color: #ff2626;
+}
+.page header{
+    min-height: 33vh;
+}
+.page .wrapper{
+    padding-top: 2em;
+}
+ul.inside {
+    list-style: disc;
+    padding-left: 4em;
+    padding-top: 1em;
+}
+.coding p {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 21px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #212121;
+    padding: 30px 15px;
+    color: #fff;
+    border-radius: 15px;
+}
+.form-group input {
+    background: #fff;
+    outline: 0;
+    border: 0;
+    padding: 10px 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+textarea {
+    height: 150px;
+    font-family: 'Poppins';
+    padding: 10px 13px;
+    font-size: 15px;
+}
+button.submit {
+    background: #ff2626;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins';
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-size: 17px;
+}
